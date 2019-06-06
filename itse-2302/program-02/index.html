@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Program 2: Michael T. Siever</title>
+		<link href="program-02.css" rel="stylesheet">
+
+		<script type="text/javascript" src="program-02.js"></script>
+	</head>
+
+	<body>
+	
+		<header>
+			<div>
+				<h1>Program 02</h1>
+			</div>
+		</header>
+
+		<hr>
+		
+		<div>
+			<h2>Requirement #01</h2>
+			
+			<canvas id="myCanvas"></canvas>
+		</div>
+		
+		<hr>
+		
+		<div>
+			<h2>Requirement #02</h2>
+			
+			<p>Let's concatenate (join) two boxes of text together to make a paragraph. Enter text into the two text fields and click "Concatenate":</p>
+			
+			<p>Field 1:</p>
+			<textarea rows="4" cols="50" wrap="hard" id="text1"></textarea>
+			
+			<p>Field 2:</p>
+			<textarea rows="4" cols="50" wrap="hard" id="text2"></textarea><br><br>
+			
+			<button onclick="Req2ParagraphConcatSaysMeow()">Concatenate</button><br><br>
+			
+			<p id="paragraph"></p>
+		</div>
+		
+		<hr>
+		
+		<div>
+			<h2>Requirement #03</h2>
+			
+			<p>Here are some paragraphs that show CSS combinators</p>
+			
+			<p>Descendant:</p>
+			<div class="descendant">
+				<p>This paragraph is inside the div, which means it's a descendant.</p>
+			</div>
+			<p>This paragraph is outside the div, which means it's not a descendant.</p><br>
+			
+			<p>Child:</p>
+			<div class="child">
+				<p>This paragraph is inside the div, which means it's a child.</p>
+				<span><p>This paragraph is inside a span inside the div, which
+				means it's a descendant, but not a child.</p></span>
+			</div>
+			<p>This paragraph is outside the div, which means it's neither a descendant nor a child.</p><br>
+			
+			<p>Adjacent Sibling:</p>
+			<p>This paragraph precedes the div, which means it's not an adjacent sibling.</p>
+			<div class="asibling">
+				<p>This paragraph is inside the div, which means it's not an adjacent sibling.</p>
+			</div>
+			<p>This paragraph is the first paragraph outside the div, which means it's an adjacent sibling.</p>
+			<p>This paragraph is not the first paragraph outside the div, which means it's not an adjacent sibling.</p><br>
+			
+			<p>General Sibling:</p>
+			<p>This paragraph is precedes the div, which means it's not a general sibling.</p>
+			<div class="gsibling">
+				<p>This paragraph is inside the div, which means it's not a general sibling.</p>
+			</div>
+			<p>This paragraph follows the div, which means it's a general sibling.</p>
+			<code>This is code, not a paragraph, which means it's not a general sibling.</code>
+			<p>This paragraph follows the div, which means it's a general sibling.</p><br>		
+		</div>
+		
+		<hr>
+		
+		<div>
+			<h2>Requirement #04</h2>
+			
+			<button onclick="Req4ImGoingToTheLocalStorage()">Store Paragraphs</button>
+			<button onclick="Req4LocalGoldenRetriever1()">Retrieve Paragraph #1</button>
+			<button onclick="Req4LocalLabradorRetriever2()">Retrieve Paragraph #2</button>
+			<button onclick="Req4LocalGarbageRemoval()">Remove From Storage</button><br><br>
+			
+			<p id="in_storage"></p>	
+		</div>
+		
+		<hr>
+		
+		<div>
+			<h2>Requirement #05</h2>
+			
+			<p>Text For Textarea:</p>
+			<textarea rows="5" cols="60" wrap="hard" id="matchtext"></textarea><br><br>
+			
+			<p>Search (up to 50 Characters & case sensitive):
+			<input type="text" id="matchbox" maxlength="100">&nbsp;
+			<button onclick="Req5MatchboxTwenty()">Search</button></p><br><br>
+			
+			<p id="eureka"></p>
+		</div>
+		
+		<hr>
+		
+		<div>
+			<h2>Requirement #06</h2>
+			
+			<p>Enter String: <input type="text" id="Stringbox">
+			First Number: <input type="text" id="NumbaOne">
+			Second Number: <input type="text" id="NumbaTwo"><br><br>
+
+			<button onclick="Req6SliceOfLife()">Slice</button>
+			<button onclick="Req6SubStringCheese()">Substring</button>
+			<button onclick="Req6SubStrOperationDontTouchTheSides()">Substr</button></p><br><br>
+			
+			<p id="string_result"></p>
+		</div>
+		
+		<hr>
+		
+		<div>
+			<h2>Requirement #07</h2>
+			
+			<p>First String: <input type="text" id="string_to_replace">
+			Second String: <input type="text" id="replacement_string">
+			Sentence Using First String: <input type="text" id="life_sentence"><br><br>
+			
+			<button onclick="Req7ThisMustBeTheReplace()">Replace</button></p><br><br>
+			
+			<p id="sent_res"></p>
+		</div>
+		
+		<hr>
+		
+		<div>
+			<h2>Requirement #08</h2>
+			
+			<p>Convert a string to an array by entering two or more flower types. Separate them with the <strong>'&'</strong> symbol:<br>
+			<input type="text" id="flow_str">
+			<button onclick="Req8StarrayOfSunshineAndDaisies()">Convert</button></p><br><br>
+			
+			<p id="str_array_res"></p>
+		</div>
+		
+		<hr>
+		
+		<div>
+			<h2>Requirement #09</h2>
+			
+			<p>Click on the Panda as many times as you desire. When you are finished,<br>
+            click "Get Total Clicks" for total number of clicks. &nbsp;
+			<button onclick="Req9NoMoreClicksMakesMeASaaaaadPanda()">Get Total Clicks</button></p><br><br>
+			
+			<div class="req_textarea">
+				<img src="images/panda.jpg" id="Panda" onclick="Req9YouCanCountOnMe()">
+			</div>
+
+			<p id="num_clicks"></p>
+			
+			<p>Note: This counter will reset to 0 when closing the browser or window.</p>
+		</div>
+		
+		<hr>
+		
+		<div>
+			<h2>Requirement #10</h2>
+			
+			First Number: <input type="text" id="uno">
+			Second Number: <input type="text" id="dos" >
+			<button onclick="Req10DivideAndConquer()">Divide</button>
+			<p>Screwy Division:</p>
+			<p>Divide the first number by the second number. Use a zero as the second number. Then, use a string for the second number.</p><br><br>
+			
+			<p id="quotient"></p>
+		</div>
+		
+		<hr>
+		
+		<div>
+			<h2>Requirement #11</h2>
+			
+			<p>Click the "Populate" button to fill a table with examples of
+			Number(), parseInt(), and parseFloat() data: </p>
+			<button onclick="Req11KnightsOfTheRoundTable()">Populate</button><br><br>
+			
+			<p id="tabvals"></p>
+		</div>
+		
+		<hr>
+		
+		<div>
+			<h2>Requirement #12</h2>
+			
+			<p>Click the "Generate Numbers" button to get three random numbers: 
+			<button onclick="Req12ItsOnRandom()">Generate Numbers</button></p>
+			
+			<p id="rand_nums"></p>
+		</div>
+		
+		<hr>
+		
+		<div>
+			<h2>Requirement #13</h2>
+			
+			<p>This will calculate an exponential operation.
+			Base Number: <input type="text" id="basenum">
+			Exponent Number: <input type="text" id="exponent">
+			<button onclick="Req13NowYourePlayingWithPower()">Calculate</button></p>
+			
+			<p id="exp_num"></p>
+		</div>
+		
+		<hr>
+		
+		<div>
+			<h2>Requirement #14</h2>
+			
+			Click "Date" to get the date in four different formats: <button onclick="Req14ThisFeelsSoDated()">Date</button><br><br>
+			<div id="dates"></div>
+		</div>
+		
+		<hr>
+		
+		<div>
+			<h2>Requirement #15</h2>
+			
+			<p>Click button to get today's date and populate a table with various Date methods: 
+			<button onclick="Req15TheTablesHaveTurned()">Populate</button></p>
+			
+			<p id="end_times"></p>
+			
+			<table>
+				<tr>
+					<th></th>
+					<th>Day</th>
+					<th>Month</th>
+					<th>Year</th>
+				</tr>
+				<tr>
+					<th>Get Date</th>
+						<td id="data01"></td>
+						<td id="data02"></td>
+						<td id="data03"></td>
+				</tr>
+				<tr>
+					<th>Set Date</th>
+						<td id="data11"></td>
+						<td id="data12"></td>
+						<td id="data13"></td>
+				</tr>
+			</table>
+		</div>
+			
+		<hr>
+			
+		<div>
+			<h2>Requirement #16</h2>
+			
+			<p>Enter 7 names of planets into an array. Separate these names with a <strong>comma</strong>.<br>
+			Click "Display Array" to display array. Then, click "Make String" to join and convert the array to a string: <input type="text" id="my_planets">
+			<button onclick="Req16AnotherDimensionNewGalaxyIntergalacticPlanetArray()">Display Array</button> &nbsp;
+			<button onclick="Req16HeWillJoinUsOrDieMaster()">Make String</button></p>
+				
+			<p id="plArray"></p>
+		</div>
+			
+		<hr>
+			
+		<div>
+			<h2>Requirement #17</h2>
+				
+			Remove last two elements from planetsArray: 
+			<button onclick="Req17LosingOurMarbles()">Remove Last 2 Planets</button> &nbsp;
+			Add two new planets to the array: <input type="text" id="add_first_planet">&nbsp;<input type="text" id="add_second_planet">
+			<button onclick="Req17OhWaitFoundThem()">Add</button>
+ 
+			<p id="replace_last_two_planets"></p>
+		</div>
+			
+		<hr>
+			
+		<div>
+			<h2>Requirement #18</h2>
+			
+			<p>Remove first element from planetsArray:
+			<button onclick="Req18RemoveTheStoneOfShame()">Remove First Planet</button> &nbsp;
+			Add a new items to beginning: <input type="text" id="add_one_planet">&nbsp;
+			<button onclick="Req18AttachTheStoneOfTriumph()">Add</button></p>
+
+			<p id="replace_first_planet"></p>
+		</div>
+
+		<hr>
+
+		<div>
+			<h2>Requirement #19</h2>
+			
+			<p>Click "Add" to add a new element to third position of planetsArray: <input type="text" id="new_planet_three">&nbsp;
+			<button onclick="Req19NewThirdRockFromTheSun()">Add</button> &nbsp;
+			Sort the new planetsArray in alphabetical order:&nbsp;
+			<button onclick="Req19ThatsTheSortOfIt()">Sort</button> &nbsp;</p>
+
+			<p id="sorted_planets"></p>
+		</div>
+		
+		<hr>
+		
+		<div>
+			<h2>Requirement #20</h2>
+			
+			Click "New Array" to create new array using the first four elements of planetsArray:
+			<button onclick="Req20ArraysOfHope()">New Array</button> &nbsp;
+    
+			<p id="gemini_arrays"></p>
+		</div>
+		
+		<hr>
+		
+		<div>
+			<h2>Requirement #21</h2>
+			
+			<p>Enter two numbers and click "Compare Numbers" to compare them to see if one is greateter, less than, or equal to the other.<br>
+			First Number: <input type="text" id="compare1">
+			Second Number: <input type="text" id="compare2" >
+			<button onclick="Req21CompareAndContrast()">Compare Numbers</button></p>
+			
+			<p id="comparison"></div>
+		</div>
+		
+		<hr>
+		
+		<div>
+			<h2>Requirement #22</h2>
+			
+			<p>Enter a number and click "Submit": <input type="text" id="logic_num">&nbsp;
+			<button onclick="Req22ItIsLogical()">Submit</button></p>
+			
+			<p id="logic"></p>
+		</div>
+		
+		<hr>
+		
+		<div>
+			<h2>Requirement #23</h2>
+			
+			<p>Enter a type of metal and click "Check": <input type="text" id="metal">&nbsp;
+			<button onclick="Req23OohSomethingShiny()">Check</button></p>
+				
+			<p id="which_metal"></p>
+		</div>
+		
+		<hr>
+		
+		<div>
+			<h2>Requirement #24</h2>
+			
+			<p>Enter the name of an actor and click "Check": <input type="text" id="actor">&nbsp;
+			<button onclick="Req24AndTheOscarGoesTo()">Check</button></p>
+			
+			<p id="which_actor"></p>
+		</div>
+		
+		<hr>
+		
+		<div>
+			<h2>Requirement #25</h2>
+			
+			<p>Enter the name of an animal and click "Check": <input type="text" id="animal">&nbsp;
+			<button onclick="Req25AnimalHouse()">Check</button></p>
+			
+			<p id="which_animal"></p>
+		</div>
+		
+		<hr>
+		
+		<div>
+			<h2>Requirement #26</h2>
+			
+			<p>Click "Retrieve" to see which planets are in the planetsArray:
+			<button onclick="Req26BoyAmIInForIt()">Retrieve</button></p>
+			<p>The first five planets in the planetArray: <button onclick="Req26IveBeenDoingThisForAWhileLoop()">Retrieve</button></p>
+			<p>The last planet in the planetArray: <button onclick="Req26ShoopDoWhile()">Retrieve</button></p>
+			
+			<p id="loop_de_loop"></p>	
+		</div>
+
+		<hr>
+		
+		<p>Another Awesome Site&trade; brought to you by Michael Siever &copy;</p>
+		
+		<footer>
+			<div>
+				<p><a href="../index.html">Return to Main ITSE 2302 Page</a></p>
+			</div>
+		</footer>
+	</body>
+</html>

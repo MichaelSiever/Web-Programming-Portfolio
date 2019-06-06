@@ -1,0 +1,46 @@
+/* CSS file for Michael T. Siever Program 04 Assignment */
+
+body {
+	text-align: center;
+}
+
+.FreshPrints {
+    visibility: visible;
+    cursor: pointer;
+}
+
+.FreshPrintsOff {
+    color: #ffffff;
+    display: block;
+    cursor: pointer;
+}
+
+table {
+    width: 650px;
+    border: 1px solid green;
+    margin: auto;
+}
+
+td {
+    border: 1px solid green;
+    text-align: center;
+    height: 340px;
+}
+
+.ClassOutput {
+    visibility: visible;
+}
+
+.ClassOutputAlt {
+    visibility: hidden;
+}
+
+.hoverOn {
+    color: blue;
+    background-color: green;
+}
+
+.hoverOff {
+    color:default;
+    background-color: default;
+}

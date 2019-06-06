@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Program 1: Michael T. Siever</title>
+		<link href="program-01.css" rel="stylesheet">
+
+		<script type="text/javascript" src="program-01.js"></script>
+	</head>
+
+	<body>
+	
+		<header>
+			<div>
+				<h1>Program 01</h1>
+			</div>
+		</header>
+
+		<hr>
+		
+		<div>
+			<h2>Requirement #01</h2>
+			
+			<p>Click on the light bulb to turn it on. Click on it again to turn it back off.</p>
+			
+			<img id="Light Bulb" onclick="Req1LightOnOff(); Req2DateTimeChange();" src="images/pic_bulb_is_off.gif" />
+		</div>
+		
+		<hr>
+		
+		<div>
+			<h2>Requirement #02</h2>
+			
+			<p id="DT Change"></p>
+		</div>
+		
+		<hr>
+
+		<div>
+			<p>Click <a href="bootstrapdemo.html">here</a> to see a demo of the Bootstrap framework.</p>
+		</div>
+		
+		<hr>
+
+		<div>
+			<h2>Requirement #04</h2>
+
+			<picture>
+				<source media="(min-width: 640px)" srcset="images/cake.jpg">
+				<source media="(min-width: 425px)" srcset="images/cupcake.jpg">
+				<img src="images/cake_pops.jpg" alt="Dessert" style="width:auto;">
+			</picture>
+		</div>
+		
+		<hr>
+
+		<div>
+			<h2>Requirement #05</h2>
+			
+			<p class="resizable">Resize the browser window to see what happens to this text!</p>
+		</div>
+		
+		<hr>
+
+		<div>
+			<h2>Requirement #06</h2>
+			
+			<p>Select a pizza size from the drop down menu.</p>
+			
+			<select id="PizzaChoice" onchange="document.getElementById('Pizza').src = this.value">
+    			<option value="images/small_pizza.jpg">Small</option>
+    			<option value="images/medium_pizza.jpg">Medium</option>
+    			<option value="images/large_pizza.jpg">Large</option>
+			</select><br><br>
+
+			<img id="Pizza">
+		</div>
+		
+		<hr>
+		
+		<div>
+			<h2>Requirement #07</h2>
+			
+			<p>Click on the "Clear" button to clear this page.</p>
+			
+			<button onclick="Req7ClearPage()">Clear</button>
+		</div>
+		
+		<hr>
+		
+		<div>
+			<h2>Requirement #08</h2>
+			
+			<p id="changeText">"I heard a joke once. Man goes to doctor, says he's depressed.
+			Life seems harsh and cruel. Says he feels all alone in a threatening world.
+			Doctor says 'Treatment is simple. The great clown, Pagliacci, is in town.
+			Go see him. That should pick you up'. Man bursts into tears.
+			'But doctor', he says, 'I am Pagliacci.' Good joke. Everybody laugh.
+			Roll on snare drum. Curtains."<br> - Alan Moore, Watchmen</p><br>
+			
+			<p>Click on the button to alter the appearance of the paragraph above this line. &nbsp;
+			<button onclick="Req8TextTransform()";>Alter Paragraph</button></p></br>	
+		</div>
+		
+		<hr>
+		
+		<div>
+			<h2>Requirement #09</h2>
+			
+			<p>Click the button to get your coordinates.</p>
+
+			<button onclick="Req9GetLocation()">Try It</button>
+
+			<p id="coordinates"></p>
+		</div>
+
+		<hr>
+		
+		<div>
+			<h2>Requirement #10</h2>
+			
+			<p>Enter two numbers in the input boxes.</p>
+			
+			<form>
+				First Number: <input type="text" name="numeroUno" id="first" /> &nbsp;
+        		Second Number: <input type="text" name="numeroDos" id="second" /> &nbsp;<br><br>
+				<input type="button" value="Enter" onclick="Req10DoMath()">		
+			</form><br>
+			
+		    <label id ="sum"></label><br>
+        	<label id="difference" ></label><br>
+        	<label id ="product"></label><br>
+			<label id ="quotient"></label><br>
+		</div>
+		
+		<hr>
+		
+		<div>
+			<h2>Requirement #11</h2>
+			
+			<p>Let's add (or concatenate) two numeric strings together.</p>
+			
+			<form>
+				First Numeric String: <input type="text" name="Won" id="primero" /> &nbsp;
+				Second Numeric String: <input type="text" name="Too" id="segundo" /> &nbsp;<br><br>
+				<input type="button" value="Add Strings" onclick="Req11StringAdd()">
+				<p id="AddString"></p>
+			</form>
+		</div>
+		
+		<hr>
+		
+		<div>
+			<h2>Requirement #12</h2>
+			
+			<p>Enter a number. If it is even, an even-numbered die will appear.
+			if it is odd, an odd-numbered die will appear.<br><br>
+			<input type="text" id="VivaLasVegas" /> &nbsp;<br><br>
+			<input type="button" value="Put it All on Red!" onclick="Req12RollTheDice()"></p>
+        	<p><img id="DiceDiceBaby" ></p>
+        </div>
+			
+        <hr>
+        
+        <div>
+        	<h2>Requirement #13</h2>
+        	
+        	<p>Enter a number: <input type="text" id="ChecksMarksTheSpot" /> &nbsp;<br><br>
+        	<input type="button" value="Submit" onclick="Req13CheckRepublic()">
+        	<br><br>
+        	
+        	Please select to add or subtract:&nbsp;
+        	+ 1<input type="checkbox" id="PlusOne"> &nbsp;
+        	- 1<input type="checkbox" id="TakeAwayOne"></p>
+        	
+    		<p id="Checkmate"></p>
+    	</div>
+    	
+    	<hr>
+    	
+    	<div>
+    		<h2>Requirement #14</h2>
+    	
+    		<p>Select a name from the drop down menu and click the "Get Name" button.<br>
+        	The name selected will appear with the color changing accordingly.<br>
+        	<select id="SelectName">
+            	<option value="Name 1">Name 1</option>
+            	<option value="Name 2">Name 2</option>
+            	<option value="Name 3">Name 3</option>
+            	<option value="Name 4">Name 4</option>
+            </select>&nbsp;
+        	<input type="button" value="Get Name" onclick="Req14ChangeName()"></p>
+    	
+   			<h1 id="AndBingoWasHisNameO"></h1>
+   		</div>
+   	
+   		<hr>
+   	
+   		<div>
+   			<h2>Requirement #15</h2>
+   		
+   			<p>Drag the arrow into the box above it.</p>
+   		
+   			<div id="dragdropdiv" ondrop="Req15DropAndGiveMeFifty(event)" ondragover="Req15StopDropAndRoll(event)"></div><br>
+
+			<img id="arrow" src="images/arrow.png" draggable="true" ondragstart="Req15MajorDragMan(event)" width="300" height="100">
+		</div>
+	
+		<hr>
+	
+		<div>
+			<h2>Requirement #16</h2>
+		
+			<p>Roll your cursor over the section below to change the color. 
+			Move the cursor away from the section to change the color back.</p><br><br>
+  
+			<div id="ChChChChanges" onmouseover="Req16BackChange(this)" onmouseout="Req16ChangeBack(this)" style="width: 100%; height: 150px"></div>
+		</div>
+	
+		<hr>
+		
+		<p>Another Awesome Site&trade; brought to you by Michael Siever &copy;</p>
+		
+		<footer>
+			<div>
+				<p><a href="../index.html">Return to Main ITSE 2302 Page</a></p>
+			</div>
+		</footer>
+	</body>
+</html>

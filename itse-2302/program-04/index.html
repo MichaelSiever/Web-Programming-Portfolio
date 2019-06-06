@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Program 4: Michael T. Siever</title>
+		<link href="program-04.css" rel="stylesheet">
+
+		<script type="text/javascript" src="program-04.js"></script>
+	</head>
+
+	<body onload ="req1_x('dateDisplay'); Req3CIsForCookie()">
+	
+		<header>
+			<div>
+				<h1>Program 04</h1>
+			</div>
+		</header>
+
+		<hr>
+		
+		<div>
+			<h2>Requirement #01</h2>
+			
+			<h2 id="dateDisplay"></h2>
+			
+			<script>
+				(function Req1DateWithAChameleon() {
+    				document.getElementById("dateDisplay").style.color = 'green';
+				})();
+			</script>
+		</div>
+		
+		<hr>
+		
+		<div>
+			<h2>Requirement #02</h2>
+			
+			<p>Please select a color to change the date above: </p>
+        	<select id = selectColor onchange="Req2TasteTheRainbow(this)">
+            	<option value="Green" selected>Green</option>
+            	<option value="Red">Red</option>
+            	<option value="Blue">Blue</option>
+           	 	<option value="Purple">Purple</option>
+			</select>
+		</div>
+		
+		<hr>
+		
+		<div>
+			<h2>Requirement #03</h2>
+			
+			<p id="omNomNom"></p>
+		</div>
+		
+		<hr>
+		
+		<div>
+			<h2>Requirement #04</h2>
+			
+			<p>Click button to display a count and a random number between 1-100.<br/>
+            This may be clicked numerous times.<button onclick="Req4CoffeeIsForClosures()">Click</button></p>
+			<p id="closure"></p>
+		</div>
+		
+		<hr>
+		
+		<div>
+			<h2>Requirement #05</h2>
+			
+			<p>Using toggle functionality, click on the paragraphs<br>
+        	to watch them disappear and re-appear by iterating through them.</p>
+        	
+    		<div id="para">
+        		<p class="FreshPrints" onclick="Req5tItTogglesTheMind(this)">Now this is a story all about how
+				my life got flipped turned upside down, and I'd like to take a minute just sit right there
+				I'll tell you how I became the Prince of a town called Bel Air.</p>
+
+        		<p class="FreshPrints" onclick="Req5tItTogglesTheMind(this)">In west Philadelphia, born and raised
+				on the playground is where I spent most of my days, chillin' out, maxin', relaxin' all cool,
+				and all shootin' some b-ball outside of the school.</p>
+
+        		<p class="FreshPrints" onclick="Req5tItTogglesTheMind(this)">When a couple of guys, who were up to no good,
+				started makin' trouble in my neighborhood. I got in one little fight, and my mon got scared,
+				and said "you're movin' with your auntie and uncle in Bel-Air."</p>
+
+        		<p class="FreshPrints" onclick="Req5tItTogglesTheMind(this)">I whistled for a cab, and when it came near,
+				the licensce plate said fresh and it had dice in the mirror. If anything I could say that this cab was rare,
+				but I thought "Man, forget it. Yo, homes, to Bel-Air!"</p>
+
+        		<p class="FreshPrints" onclick="Req5tItTogglesTheMind(this)">I pulled up to the house about 7 or 8,
+				and I yelled to the cabbie "Yo, homes, smell ya later!" Looked at my kingdom, I was finally there,
+				to sit on my throne as the Prince of Bel-Air.</p>
+			</div>
+		</div>
+		
+		<hr>
+		
+		<div>
+			<h2>Requirement #06</h2>
+			
+			<p>Click "Change" to change the font size and font family of the paragraphs above.
+            <button onclick="Req6ChangeThatFont()">Change</button></p>	
+		</div>
+		
+		<hr>
+		
+		<div>
+			<h2>Requirement #07</h2>
+			
+			<p>Click button see all of the inner.HTML values of all the elements on the page.<br/>
+            This will return a very long window and may adversely affect the functionality requirements that follow. <br/>
+            Note: You will need to refresh the page after completing this.
+            <button onclick="Req7EverythingButTheKitchenSink()">View</button></p>
+            
+            <p id="pardonOurDust"></p>
+		</div>
+		
+		<hr>
+		
+		<div>
+			<h2>Requirement #08</h2>
+			
+        	<table>
+            	<tr>
+                	<td id="almonds">Almonds</td>
+                	<td id="carrots">Carrots</td>
+                	<td id="mushrooms">Mushrooms</td>
+            	</tr>
+            	<tr>
+                	<td id="pears">Pears</td>
+                	<td id="strawberries">Strawberries</td>
+                	<td id="tomatoes">Tomatoes</td>
+            	</tr>
+        	</table>
+
+        	<p>Select an image name:</p>
+            	<select id="tablePic" onchange="Req8DinnersOnTheTable(this)">
+                	<option value="almonds" class="pic">Almonds</option>
+                	<option value="carrots" class="pic">Carrots</option>
+                	<option value="mushrooms" class="pic">Mushrooms</option>
+                	<option value="pears" class="pic">Pears</option>
+                	<option value="strawberries" class="pic">Strawberries</option>
+                	<option value="tomatoes" class="pic">Tomatoes</option>
+            	</select>	
+		</div>
+		
+		<hr>
+		
+		<div>
+			<h2>Requirement #09</h2>
+			
+			<p>Click "Start Worker" to cycle through five images which will change automatically every 3 seconds.</p>
+            <button onclick="Req9StartWorker()">Start Worker</button>
+            <button onclick="Req9StopWorker()">Stop Worker</button><br><br>
+            
+            <img id="work" alt="" class="ClassOutput"></img>
+		</div>
+		
+		<hr>
+		
+		<div>
+			<h2>Requirement #10</h2>
+			
+			<p>Click "Visibility" to toggle the visibility of the image above.</p>
+			<button onclick="Req10TheInvisibleMan()" id="changeButton" class="hoverOff">Visibility</button>
+		</div>
+		
+		<hr>
+		
+		<div>
+			<h2>Requirement #11</h2>
+			
+			<p>An event listener has been added to change the appearance of the button in the previous 
+			requirement on mouseover (hovering mouse over the button).</p>
+			
+			<script>
+				var butChng = $('changeButton');
+				butChng.addEventListener("mouseover", Req11HoverChange);
+				butChng.addEventListener("mouseout", Req11ChangeBack);
+
+				function Req11HoverChange() {
+					butChng.className ='hoverOn';
+				}
+
+				function Req11ChangeBack() {
+				    butChng.className = 'hoverOff';
+				}
+			</script>
+		</div>
+		
+		<hr>
+		
+		<div>
+			<h2>Requirement #12</h2>
+			
+			<p><a href="requirement-12.html">Requirement #12</a></p>	
+		</div>
+		
+		<hr>
+		
+		<div>
+			<h2>Requirement #13</h2>
+			
+			<p id="DivyItUp">Click "Create" to create a new paragraph. 
+			<button onclick="Req13AndOnTheSeventhDayHeCreatedANewParagraph()">Create</button></p>		
+		</div>
+		
+		<hr>
+		
+		<div>
+			<h2>Requirement #14</h2>
+			
+			<div onmouseover="Req14GottaPSoBadlyRightNow()">
+    		Please 'mouseover' this 'div' and <br>
+    		below will display the number<br>
+    		of paragraphs on this page.<br><br></div>
+    		
+			<div id="pCount"></div>
+			
+		</div>
+		
+		<hr>
+		
+		<div>
+			<h2>Requirement #15</h2>
+			
+			<p>Click "Open Curtains" to open the curtains.</p><br>
+			<input type="button" value="Open Curtains" onclick="Req15SunnierDaysAreComing(this); "/>		
+		</div>
+
+		<hr>
+		
+		<p>Another Awesome Site&trade; brought to you by Michael Siever &copy;</p>
+		
+		<footer>
+			<div>
+				<p><a href="../index.html">Return to Main ITSE 2302 Page</a></p>
+			</div>
+		</footer>
+	</body>
+</html>		

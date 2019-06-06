@@ -1,0 +1,99 @@
+<!--
+-----------------------------------------------------------------------------------------
+Name: Michael Siever
+Assignment: Final Project
+Purpose: HTML File for Xmas Xpress Registration Form Page
+Notes: Completed 12/10/2018
+-----------------------------------------------------------------------------------------
+-->
+
+<!doctype HTML>
+
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>Xmas Xpress :: Registration Form</title>
+		<link href="https://fonts.googleapis.com/css?family=Libre+Franklin:300,300i,400,400i,700,700i" rel="stylesheet" type="text/css">
+		<link href="https://fonts.googleapis.com/css?family=Mountains+of+Christmas:400,700" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="css/main.css">
+	</head>
+	
+	<body>
+		<div>
+			<header>
+				<hr>
+				
+				<h1>Xmas Xpress</h1>
+				
+				<nav>
+					<a href="index.html">Home</a>&nbsp;
+					<a href="catalog.html">Catalog</a>&nbsp;
+					<a href="contact.html">Contact Form</a>&nbsp;
+					<a href="registration.html">Registration Form</a>&nbsp;
+				</nav>
+					
+				<hr>
+			</header>
+		</div>
+		
+		<div class="topText">
+			<h2>Registration Form</h2>
+		</div>
+		
+		<form id="contactForm" name="contactForm" role="form" accept-charset="utf-8"><!-- Contact Form -->
+			<span id="message-area"></span>
+			<br>
+			<br>
+
+			<div>
+				<p>Complete this form to register for some <em>holly jolly</em> discounts!
+			</div>
+						
+			<div class="form-group centered"><!-- Place to enter first name -->
+				<input type="text" class="form-control" id="fname" name="fname" placeholder="Please enter your first name" maxlength="64" value="">
+			</div>
+			
+			<div class="form-group centered"><!-- Place to enter last name -->
+				<input type="text" class="form-control" id="lname" name="lname" placeholder="Please enter your last name" maxlength="64" value="">
+			</div>
+
+			<div class="form-group centered"><!-- Place to enter email -->
+				<input type="text" class="form-control" id="remail1" name="remail1" placeholder="Please enter your e-mail" maxlength="64" value="">
+			</div>
+
+			<div class="buttons"><!-- send and reset buttons -->
+				<input type="button" id= "s" value="Submit" onclick="sendReg()">
+				<input type="button" id= "r" value="Clear" onclick="clearOutReg()">
+			</div>
+		</form>
+		
+		<div>
+			<footer>
+			
+				<hr>
+				
+				<p>Another Awesome Site&trade; brought to you by Michael Siever &copy;</p>
+							
+				<nav>
+					<a href="index.html">Home</a>&nbsp;
+					<a href="catalog.html">Catalog</a>&nbsp;
+					<a href="contact.html">Contact Form</a>&nbsp;
+					<a href="registration.html">Registration Form</a>&nbsp;
+				</nav>
+				
+				<p><a href="../index.html">Return to Main ITSE 1311 Page</a></p>
+						
+				<hr>
+				
+			</footer>
+		</div>
+		<script src="js/jquery-3.3.1.js"></script>
+		<script src="js/bootstrap.js"></script>
+		<script src="js/commonfunctions.js"></script>
+		<script src="js/registration.js"></script>
+	</body>
+</html>

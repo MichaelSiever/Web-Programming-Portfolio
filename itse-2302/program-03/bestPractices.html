@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="UTF-8">
+    	<title>program-03: Style Guide</title>
+    	<link href="program-03.css" rel="stylesheet">
+    	<script type="text/javascript" src="program3.js"></script>
+	</head>
+
+	<body>
+		<h2 id="uno">Avoid Global Variables</h2>
+		
+		<p> Minimize the use of global variables.<br/>
+    	This includes all data types, objects, and functions.<br/>
+    	Global variables and functions can be overwritten by other scripts.<br/>
+    	Use local variables instead, and learn how to use closures.</p>
+
+
+		<h2 id="dos">Always Declare Local Variables</h2>
+		
+		<p>All variables used in a function should be declared as local variables.<br/>
+    	Local variables must be declared with the var keyword, otherwise they will become global variables.</p>
+
+
+		<h2 id="tres">Declarations on Top</h2>
+		
+		<p>It is a good coding practice to put all declarations at the top of each script or function.</p>
+
+		<h2 id="cuatro">Initialize Variables</h2>
+		
+		<p>It is a good coding practice to initialize variables when you declare them.</p>
+
+		<h2 id="cinco"> Never Declare Number, String, or Boolean Objects</h2>
+
+		<p>Always treat numbers, strings, or booleans as primitive values. Not as objects.<br/>
+    	Declaring these types as objects, slows down execution speed, and produces nasty side effects.</p>
+
+		<h2 id="seis">Don't Use new Object()</h2>
+		
+		<p>
+    		<ul>
+        		<li>Use {} instead of new Object()</li>
+        		<li>Use "" instead of new String()</li>
+        		<li>Use 0 instead of new Number()</li>
+        		<li>Use false instead of new Boolean()</li>
+        		<li>Use [] instead of new Array()</li>
+        		<li>Use /()/ instead of new RegExp()</li>
+        		<li>Use function (){} instead of new Function()</li>
+    		</ul>
+		</p>
+
+		<h2 id="siete">Beware of Automatic Type Conversions</h2>
+		
+		<p>Beware that numbers can accidentally be converted to strings or NaN (Not a Number).<br/>
+    	JavaScript is loosely typed. A variable can contain different data types, and a variable can change its data type.</p>
+
+
+		<h2 id="ocho">Use === Comparison</h2>
+		
+		<p>The == comparison operator always converts (to matching types) before comparison.<br/>
+    	The === operator forces comparison of values and type.</p>
+
+
+		<h2 id="nueve">Use Parameter Defaults</h2>
+		
+		<p>If a function is called with a missing argument, the value of the missing argument is set to undefined.<br/>
+    	Undefined values can break your code. It is a good habit to assign default values to arguments.</p>
+
+		<h2 id="diez">End Your Switches with Defaults</h2>
+		
+		<p>Always end your switch statements with a default. Even if you think there is no need for it.</p>
+
+		<h2 id="once">Avoid Using eval()</h2>
+		
+		<p>The eval() function is used to run text as code. In almost all cases, it should not be necessary to use it.<br/>
+    	Because it allows arbitrary code to be run, it also represents a security problem.</p>
+	</body>
+</html>

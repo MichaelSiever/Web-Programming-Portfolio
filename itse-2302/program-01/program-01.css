@@ -1,0 +1,17 @@
+/* CSS file for Michael T. Siever's Program 01 Assignment */
+
+body {
+	text-align: center;
+}
+
+.resizable {
+	font-size: 4vw;
+}
+
+#dragdropdiv {
+	margin: auto;
+	width: 300px;
+  	height: 100px;
+  	padding: 10px;
+  	border: 1px solid #aaaaaa;
+}

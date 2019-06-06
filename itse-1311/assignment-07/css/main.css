@@ -1,0 +1,37 @@
+/*
+-----------------------------------------------------------------------------------------
+Name: Michael Siever 6189804
+Assignment: 07
+Purpose: CSS File for Decision-Making Assignment
+Notes: Completed 12/14/2018
+-----------------------------------------------------------------------------------------
+*/
+
+body {
+	text-align: center;
+}
+
+.heading{
+  text-align: center;
+}
+
+.form-area{
+  width: 200px;
+  margin: 10px auto;
+}
+
+.grade{
+  width: 100%;
+}
+
+#answer-area{
+  text-align: center;
+}
+
+.error-text{
+  color: red;
+}
+
+.normal-text{
+  color: black;
+}

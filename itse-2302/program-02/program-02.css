@@ -1,0 +1,39 @@
+/* CSS file for Michael T. Siever's Program 01 Assignment */
+
+body {
+	text-align: center;
+}
+
+#myCanvas {
+	width: 300;
+	height: 150;
+	border: 1px solid #d3d3d3;
+}
+
+.descendant p {
+	background-color: yellow;
+}
+
+.child > p {
+	background-color: yellow;
+}
+
+.asibling + p {
+	background-color: yellow;
+}
+
+.gsibling ~ p {
+	background-color: yellow;
+}
+
+table {
+	margin: auto;
+    border: 1px solid green;
+    text-align: center;
+    width: 50px;
+}
+
+td, tr, th{
+    border: 1px solid green;
+    text-align: center;
+}

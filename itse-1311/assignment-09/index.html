@@ -1,0 +1,96 @@
+<!--
+-----------------------------------------------------------------------------------------
+Name: Michael Siever
+Assignment: 09
+Purpose: HTML File for Contact Form Validation Assignment
+Notes: Completed 12/03/2018
+-----------------------------------------------------------------------------------------
+-->
+
+<!doctype HTML>
+
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<title>Contact Form</title>
+		
+		<script src="js/FormValidation.js"></script>
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous"><!-- envelope link -->
+	</head>
+
+	<body>
+		<div>
+			<header>
+				<div class="topText">
+					<h1>Introduction to JavaScript Form Validation</h1>
+				</div>
+			</header>
+			
+			<hr>
+		
+			<div class="topText">
+				<h2>Contact Form</h2>
+			</div>
+				
+			<form id="contactForm" name="contactForm" role="form" accept-charset="utf-8"><!-- Contact Form -->
+				<span id="message-area"></span><br><br>
+				
+				<div class="contact-text"><!-- Envelope -->
+				
+					<i class="fa fa-envelope"></i>
+				
+					<span id="3mai1"><a href="index.html" onClick="show(); return false;">
+					Display Email Address</a></span> or use the form below.<br><br>
+				</div>
+					
+				<div class="form-group"><!-- Place to enter name -->
+					<input type="text" class="form-control" id="name" name="name" 
+					placeholder="Please enter your name" maxlength="64" value="">
+				</div>
+
+				<div class="form-group"><!-- Place to enter email -->
+					<input type="text" class="form-control" id="remail1" name="remail1" 
+					placeholder="Please enter your e-mail" maxlength="64" value="">
+				</div>
+
+				<div class="form-group"><!-- Place to match email -->
+					<input type="text" class="form-control" id="remail2" name="remail2" 
+					placeholder="Please confirm your e-mail" maxlength="64" value="">
+				</div>
+
+				<div class="form-group"><!-- Place to enter subject -->
+					<input type="text" class="form-control" id="subject" name="subject" 
+					placeholder="Please enter a subject" maxlength="64" value="">
+				</div>
+
+				<div class="form-group" id="maxChar"><!-- Instructions for user -->
+					Message: 1000 characters maximum
+				</div>
+
+				<div class="form-group"><!-- Place to enter message -->
+					<textarea class="form-control" id="message" name="message" 
+					placeholder="Please enter a message" rows="10" maxlength="1000"></textarea>
+				</div>
+
+				<div class="buttons"><!-- send and reset buttons -->
+					<input type="button" id= "s" value="Submit" onclick="send()">
+					<input type="button" id= "r" value="Clear" onclick="clearOut()">
+				</div>
+			</form>
+		</div>
+			
+		<hr>
+    
+    	<footer>
+			<div>
+				<p>Another Awesome Site&trade; brought to you by Michael Siever &copy;</p>
+		
+				<p><a href="../index.html">Return to Main ITSE 1311 Page</a></p>
+			</div>	
+		</footer>
+	</body>
+</html>

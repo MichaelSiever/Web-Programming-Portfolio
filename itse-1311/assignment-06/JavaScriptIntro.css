@@ -1,0 +1,45 @@
+/*
+-----------------------------------------------------------------------------------------
+Name: Michael Siever 6189804
+Assignment: 06
+Purpose: HTML File for JavaScript Introduction Assignment
+Notes: Completed 11/27/2018
+-----------------------------------------------------------------------------------------
+*/
+
+footer {
+	text-align: center;
+	font-size: 66.6666667%;
+	position: relative;
+	bottom: 0;
+	height: 100%;
+	width: 100%;
+	clear: both;
+}
+
+.heading {
+	text-align: center;
+}
+
+.small-text {
+	font-family: Libre Franklin;
+	text-align: center;
+	font-size: 95%;
+}
+	
+.answer-area {
+	text-align: center;
+}
+
+@media (min-width: 640px) and (max-width: 1200px) {
+	.small-text {
+	font-size: 90%;
+	}
+}
+
+@media (min-width: 1200px) {
+    .small-text {
+        font-size: 85%;
+    }
+}
+

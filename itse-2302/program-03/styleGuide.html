@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Program-03: JavaScript Style Guide</title>
+		<link href="program-03.css" rel="stylesheet">
+		<script type="text/javascript" src="program-03.js"></script>
+	</head>
+
+	<body>
+		<h2 id="uno">Variable Names</h2>
+		
+		<p> At W3schools we use camelCase for identifier names (variables and functions).<br/>
+		All names start with a letter.</p>
+
+		<h2 id="dos">Spaces Around Operators</h2>
+		<p>
+			Always put spaces around operators ( = + - * / ), and after commas:
+		</p>
+
+
+		<h2 id="tres">Code Indentation</h2>
+		<p>
+			Always use 4 spaces for indentation of code blocks:
+		</p>
+
+
+
+		<h2 id="cuatro">Statement Rules</h2>
+		<p>
+			General rules for simple statements:
+			
+			<ul>
+				<li>Always end a simple statement with a semicolon.</li>
+			</ul>
+			
+			General rules for complex (compound) statements:
+			
+			<ul>
+				<li>Put the opening bracket at the end of the first line.</li>
+				<li>Use one space before the opening bracket.</li>
+				<li>Put the closing bracket on a new line, without leading spaces.</li>
+				<li>Do not end a complex statement with a semicolon.</li>
+			</ul>
+		</p>
+
+
+		<h2 id="cinco">Object Rules</h2>
+		<p>
+			General rules for object definitions:
+			<ul>
+				<li>Place the opening bracket on the same line as the object name.</li>
+				<li>Use colon plus one space between each property and its value.</li>
+				<li>Use quotes around string values, not around numeric values.</li>
+				<li>Do not add a comma after the last property-value pair.</li>
+				<li>Place the closing bracket on a new line, without leading spaces.</li>
+				<li>Always end  an object definition with a semicolon.</li>
+			</ul>
+		</p>
+
+
+		<h2 id="seis">Line Length</h2>
+		<p>
+			For readability, avoid lines longer than 80 characters.<br/>
+			If a JavaScript statement does not fit on one line, the best place to break it, is after an operator or a comma.
+		</p>
+
+
+
+		<h2 id="siete">Naming Conventions</h2>
+		<p>
+			Always use the same naming convention for all your code.
+		</p>
+
+
+		<h2 id="ocho">Loading JS</h2>
+		<p>
+			Use simple syntax for loading external scripts (the type attribute is not necessary):
+		</p>
+
+
+		<h2 id="nueve">Accessing HTML</h2>
+		<p>
+			A consequence of using "untidy" HTML styles, might result in JavaScript errors.<br/>
+			If possible, use the same naming convention (as JavaScript) in HTML.
+		</p>
+
+
+
+		<h2 id="diez">File Extensions</h2>
+		<p>
+			HTML files should have a .html extension (not <br/>
+			CSS files should have a .css extension.<br/>
+			JavaScript files should have a .js extension.
+		</p>
+
+
+		<h2 id="once">File Names</h2>
+		<p>
+			Most web servers (Apache, Unix) are case sensitive about file names:<br/>
+			london.jpg cannot be accessed as London.jpg.<br/>
+			Other web servers (Microsoft, IIS) are not case sensitive:<br/>
+			london.jpg can be accessed as London.jpg or london.jpg.<br/>
+			If you use a mix of upper and lower case, you have to be extremely consistent.<br/>
+			If you move from a case insensitive, to a case sensitive server, even small errors can break your web site.<br/>
+			To avoid these problems, always use lower case file names (if possible).
+		</p>
+
+
+		<h3 id="doce">Performance:</h3>
+		<p>
+			Coding conventions are not used by computers. Most rules have little impact on the execution of programs.<br/>
+			Indentation and extra spaces are not significant in small scripts.<br/>
+			For code in development, readability should be preferred. Larger production scripts should be minified.
+		</p>
+	</body>
+</html>
