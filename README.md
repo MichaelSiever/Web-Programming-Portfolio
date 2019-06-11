@@ -19,7 +19,8 @@ Assignment 4 mobile first from the get-go.
 2. Various copyrighted images show up in Assignment 4/5. No citations are provided because the professor did not require it.
 This is the only instance in all of my portfolio that uses copyrighted images. All other images are provided by myself or 
 were obtained from PixaBay.
-3. Assignments 3-9 and the Final Project use external CSS and JavaScript (JS) files for the most part. Professor Katrompas 
+3. Assignment 8 requires the console window/inspector be open to view the result of clicking on the buttons.
+4. Assignments 3-9 and the Final Project use external CSS and JavaScript (JS) files for the most part. Professor Katrompas 
 says this is generally considered the best practice, and I carried this practice over to the next class, even though for the 
 most part, external files were not required by Dr. Martinez unless explicitly stated in the instructions.
 
